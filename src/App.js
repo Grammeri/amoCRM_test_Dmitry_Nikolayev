@@ -1,30 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 import './styles/globals.scss';
+import Header from "./components/Header/Header";
+import Body from "./components/Body/Body";
+import Footer from "./components/Footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-        <div className="Header">
-            <div className="Logo">
-            <img src={logo} className="App-logo" alt="logo" />
+    return (
+        <div className="App">
+            <div className="Header">
+                <Header/>
             </div>
-            <div className="Title">
-            <h1>React App</h1>
+            <div className="Body">
+                <Body/>
             </div>
-        </div>
-        <div className="Body">
-            <div className="Button">
-            <button>Click Me</button>
+
+            <div className="Footer">
+                <Footer/>
             </div>
         </div>
-        <div className="Footer">
-            <div className="Text">
-            <p>Footer</p>
-            </div>
-        </div>
-    </div>
-  );
+    );
 }
 
 export default App;

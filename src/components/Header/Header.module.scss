@@ -1,0 +1,55 @@
+@import "../../styles/helpers/mixins.scss";
+@import "../../styles/helpers/colors.scss";
+
+.Header {
+  padding: 46px 150px 0;
+  border: 2px red solid;
+  background-color: $background;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    border: 2px green solid;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 8pxl;
+  }
+&__velbexIcon{
+  padding-right: 8px;
+}
+  &__iconsAndMotto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__motto {
+@include montserrat-small;
+    text-align: left;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  &__details{
+    @include desktop-inter-normal;
+    border: 2px white solid;
+    display: flex;
+    gap:30px;
+    align-items: center;
+    color: $general-white
+  }
+  &__phone{
+   margin-right: 47px;
+  }
+  &__telegram{
+    padding-right: 30px;
+  }
+  &__viber{
+    padding-right: 30px;
+  }
+}
+

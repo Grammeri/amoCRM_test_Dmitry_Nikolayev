@@ -1,0 +1,17 @@
+@import "../../styles/helpers/mixins.scss";
+
+.Navigation {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  height: 100%;
+  margin-left: 52px;
+  margin-right: 137px;
+  border: 2px white solid;
+
+  a {
+    @include desktop-inter-normal;
+    text-decoration: none;
+  }
+}
+

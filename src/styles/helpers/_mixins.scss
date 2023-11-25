@@ -1,0 +1,32 @@
+@mixin font-style($font-family, $font-size, $font-weight, $line-height, $text-color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $text-color;
+}
+//desktop
+@mixin desktop-inter-normal {
+  @include font-style('Inter', 16px, 500, normal, #E4E5EA);
+}
+@mixin montserrat-small {
+  @include font-style('Montserrat', 10px, 300, normal, #E4E5EA);
+}
+
+@mixin desktop-montserrat-normal {
+  @include font-style('Montserrat', 16px, 400, normal, #E4E5EA);
+}
+
+@mixin desktop-inter-large {
+  @include font-style('Inter', 48px, 900, normal, #E4E5EA);
+}
+
+// mobile
+@mixin mobile-inter-small {
+  @include font-style('Inter', 12px, 500, normal, #E4E5EA);
+}
+
+@mixin mobile-inter-large {
+  @include font-style('Inter', 36px, 400, normal, #E4E5EA);
+}
+
