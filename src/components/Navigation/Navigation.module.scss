@@ -1,4 +1,5 @@
 @import "../../styles/helpers/mixins.scss";
+@import "../../styles/helpers/colors.scss";
 
 .Navigation {
   display: flex;
@@ -12,6 +13,10 @@
   a {
     @include desktop-inter-normal;
     text-decoration: none;
+
+    &:hover {
+      color: $hovered-header-links;
+    }
   }
 }
 

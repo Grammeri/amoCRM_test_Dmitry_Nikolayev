@@ -30,9 +30,9 @@ const Header = () => {
                 <div className={styles.Header__details}>
                     <img className={styles.Header__purpleBall} src={purpleBall} alt="purple ball"/>
                     <span className={styles.Header__phone}>+7 555 555 55-55</span>
-                    <img className={styles.telegram} src={telegramIcon} alt="telegram icon"/>
-                    <img className={styles.viber} src={viberIcon} alt="viber icon"/>
-                    <img className={styles.whatsapp} src={whatsappIcon} alt="whatsapp icon"/>
+                        <img className={styles.telegram} src={telegramIcon} alt="telegram icon"/>
+                        <img className={styles.viber} src={viberIcon} alt="viber icon"/>
+                        <img className={styles.whatsapp} src={whatsappIcon} alt="whatsapp icon"/>
                 </div>
             </div>
 

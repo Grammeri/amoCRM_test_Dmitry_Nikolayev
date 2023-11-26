@@ -2,6 +2,11 @@
 @import "../../styles/helpers/colors.scss";
 
 .Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   padding: 46px 150px 0;
   border: 2px red solid;
   background-color: $background;
@@ -49,6 +54,11 @@
     gap:30px;
     align-items: center;
     color: $general-white;
+    img{
+      &:hover{
+        cursor: pointer;
+      }
+    }
   }
   &__purpleBall{
     position: absolute;

@@ -1,11 +1,20 @@
 @import "../../styles/helpers/mixins.scss";
 @import "../../styles/helpers/colors.scss";
 
-Button{
+.Button button {
   width: 262px;
   height: 61px;
   background: #4077F3;
   color: var(--light-text, #E4E5EA);
   text-align: center;
   @include desktop-inter-normal;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background: $hovered-button;
+    color: #4077F3; // Синий цвет текста при наведении
+  }
 }
+

@@ -33,7 +33,7 @@ const Footer = () => {
                 <img className={styles.telegram} src={telegramIcon} alt="telegram icon"/>
                 <img className={styles.viber} src={viberIcon} alt="viber icon"/>
                 <img className={styles.whatsapp} src={whatsappIcon} alt="whatsapp icon"/>
-                <p>Москва, Путевой проезд 3с1, к 902</p>
+                <h6>Москва, Путевой проезд 3с1, к 902</h6>
 
 
             </div>

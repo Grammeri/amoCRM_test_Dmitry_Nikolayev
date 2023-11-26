@@ -1,49 +1,67 @@
 @import "../../styles/helpers/mixins.scss";
 @import "../../styles/helpers/colors.scss";
 
-.Footer{
+.Footer {
   margin-left: 249px;
   margin-right: 50px;
   padding-top: 198px;
   border: 2px red solid;
-  color: white;
+  color: $general-white;
 
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 
-  h4{
+  h4 {
     padding-bottom: 20px;
-@include desktop-inter-footer-subtitle;
+    @include desktop-inter-footer-subtitle;
+    color: $footer-subtitles
 
   }
-  h5{
+
+  h5 {
     @include desktop-inter-normal;
   }
+  h6{
+    @include desktop-inter-small;
+  }
 
-  p{
+  p {
     padding-bottom: 10px;
-   @include desktop-inter-small;
+    @include desktop-inter-small;
+    &:hover {
+      cursor: pointer;
+      color: $hovered-footer-links;
+    }
   }
-  &__about{
+
+  &__about {
     text-align: left;
   }
-  &__menu{
+
+  &__menu {
     text-align: left;
   }
-  &__noTitle{
-display: flex;
+
+  &__noTitle {
+    display: flex;
     flex-direction: column;
     justify-content: end;
     text-align: left;
   }
-  &__contacts{
+
+  &__contacts {
     text-align: right;
-    h5{
+
+    h5 {
       padding-bottom: 20px;
     }
-    img{
+
+    img {
       padding-bottom: 20px;
       padding-left: 10px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
