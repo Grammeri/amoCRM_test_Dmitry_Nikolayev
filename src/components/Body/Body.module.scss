@@ -1,1 +1,79 @@
+@import "../../styles/helpers/mixins.scss";
+@import "../../styles/helpers/colors.scss";
 
+.Body{
+  margin: 0 150px;
+  display: flex;
+  background-color: $background;
+  justify-content: space-between;
+
+    &__leftColumn {
+      text-align: left;
+      padding-top: 90px;
+        border: 2px blue solid;
+    }
+
+  &__withWelbex{
+    background-color: $background;
+    display: block;
+  }
+
+  &__earnMore{
+    @include mobile-inter-super-large;
+    margin-bottom: 0;
+    border: 2px red solid;
+  }
+  &__welbex{
+    margin-top: 0;
+    margin-bottom:0;
+    border: 2px green solid;
+  }
+  &__develop{
+    @include desktop-montserrat-md;
+    margin-top: 0;
+    padding-top: 30px;
+    border: 2px yellow solid;
+  }
+
+  &__rightColumn {
+    display: flex;
+    flex-direction: column;
+   text-align: right;
+    border: 2px red solid;
+  }
+&__crm{
+  padding-top: 32px;
+  padding-bottom: 33px;
+  @include desktop-montserrat-normal;
+}
+  &__together{
+    padding-bottom: 40px;
+  }
+
+&__oneRowColumn{
+ border: 5px green solid;
+}
+  &__thirty{
+    padding-bottom: 30px;
+  }
+  &__salesDep{
+    padding-bottom: 82px;
+  }
+  &__twoRowsColumn {
+    h4{
+      @include desktop-inter-subtitle;
+    }
+    h5{
+      @include desktop-montserrat-normal;
+    }
+    display: flex;
+    flex-wrap: wrap;
+
+    border: 2px black solid;
+
+    > div {
+      flex-basis: calc(50% - 20px);
+      flex-grow: 1;
+    }
+  }
+}
