@@ -1,5 +1,6 @@
 @import "./helpers/mixins";
 @import "./helpers/fonts";
+@import "./helpers/colors";
 
 * {
   box-sizing: border-box;
@@ -7,8 +8,13 @@
 }
 
 body {
-  background-color: black; // Устанавливаем черный фон для всей страницы
+  background-color: $background; // Устанавливаем черный фон для всей страницы
   margin: 0; // Убираем стандартные отступы
+}
+
+footer {
+  background-color: #1a1a1a; // Устанавливаем черный фон для подвала
+  margin: 0; // Добавляем отступы
 }
 
 h1, h2, h3, h4, h5, h6, p, button, ul {

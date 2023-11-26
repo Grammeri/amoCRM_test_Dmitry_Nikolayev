@@ -9,12 +9,19 @@
 }
 
 //desktop
+@mixin desktop-inter-small {
+  @include font-style('Inter', 16px, 400, normal, 0, #E4E5EA, none);
+}
+
 @mixin desktop-inter-normal {
   @include font-style('Inter', 16px, 500, normal, 0, #E4E5EA, none);
 }
 
 @mixin desktop-inter-subtitle {
   @include font-style('Inter', 18px, 500, normal, 0.9, #E4E5EA, uppercase);
+}
+@mixin desktop-inter-footer-subtitle {
+  @include font-style('Inter', 14px, 700, normal, 0.7, #E4E5EA, uppercase);
 }
 
 @mixin desktop-inter-large {
