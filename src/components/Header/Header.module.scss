@@ -21,6 +21,13 @@
 &__velbexIcon{
   padding-right: 8px;
 }
+  &__bigRedBall{
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    top: 70px;
+    left: 620px;
+  }
   &__iconsAndMotto {
     display: flex;
     flex-direction: column;
@@ -35,12 +42,20 @@
     }
   }
   &__details{
+    position: relative;
     @include desktop-inter-normal;
     border: 2px white solid;
     display: flex;
     gap:30px;
     align-items: center;
-    color: $general-white
+    color: $general-white;
+  }
+  &__purpleBall{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    left: -150px;
   }
   &__phone{
    margin-right: 47px;

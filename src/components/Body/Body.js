@@ -3,6 +3,7 @@ import styles from './Body.module.scss';
 import Button from "../Button/Button";
 import withWelbex from '../../assets/with-WELBEX.svg';
 import freeConsultation from '../../assets/together-with-free-consultation.svg';
+import smallRedBall from '../../assets/small-red-ball.svg';
 
 const Body = () => {
     return (
@@ -18,6 +19,7 @@ const Body = () => {
                   <img  src={freeConsultation} className={styles.Body__freeConsultation} alt={"free consultation"}/>
               </div>
               <div className={styles.Body__twoRowsColumn}>
+                  <img className={styles.Body__smallRedBall} src={smallRedBall} alt={"small red ball"}/>
                      <div className={styles.Body__vidgets}>
                          <h4 className={styles.Body__vidgetsTitle}>ВИДЖЕТЫ</h4>
                          <h5 className={styles.Body__thirty}>30 готовых<br/> решений</h5>
