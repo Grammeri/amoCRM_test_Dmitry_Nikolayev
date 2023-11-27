@@ -1,3 +1,4 @@
+@import "~sass-rem";
 @import "./helpers/mixins";
 @import "./helpers/fonts";
 @import "./helpers/colors";
@@ -13,7 +14,7 @@ body {
 }
 
 footer {
-  background-color: #1a1a1a;
+  background-color: $background;
   margin: 0;
 }
 
@@ -21,4 +22,9 @@ h1, h2, h3, h4, h5, h6, p, button, ul {
   padding: 0;
   margin: 0;
 }
+$rem-baseline: 16px;
 
+html,
+body {
+  @include rem-baseline(1.1vw);
+}

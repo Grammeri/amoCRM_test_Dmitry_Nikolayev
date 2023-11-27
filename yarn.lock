@@ -8189,6 +8189,11 @@ sass-loader@^12.3.0:
     klona "^2.0.4"
     neo-async "^2.6.2"
 
+sass-rem@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/sass-rem/-/sass-rem-4.0.0.tgz#6224dc3a3fb8c41744163e6abb29cc808e13cc17"
+  integrity sha512-/5fuEJ03qTxzMBa0XTXcgmThxUMlzQh8B9tyb2woobxcw6o0A9ut1W3FYCzjjMNqP9dnz9+7XQ9mMSvGwjIQUw==
+
 sass@^1.69.5:
   version "1.69.5"
   resolved "https://registry.npmjs.org/sass/-/sass-1.69.5.tgz#23e18d1c757a35f2e52cc81871060b9ad653dfde"

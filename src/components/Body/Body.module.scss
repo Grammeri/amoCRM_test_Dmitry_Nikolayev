@@ -1,35 +1,35 @@
 @import "../../styles/helpers/mixins.scss";
 @import "../../styles/helpers/colors.scss";
 
-.Body{
+.Body {
   margin: 100px 150px;
   display: flex;
   background-color: $background;
   justify-content: space-between;
 
   @media (max-width: 768px) {
-display: block;
+    display: block;
     margin: 0 5px;
   }
 
-    &__leftColumn {
-      text-align: left;
-      padding-top: 90px;
-        border: 2px blue solid;
-        @media (max-width: 768px) {
-          padding-top:50px;
-        }
-    }
-
-  &__withWelbex{
-    background-color: $background;
-    display: block;
+  &__leftColumn {
+    text-align: left;
+    padding-top: 90px;
     @media (max-width: 768px) {
-      width: 186px;
-        height: 44px;
+      padding-top: 50px;
     }
   }
-  &__redBallMobile{
+
+  &__withWelbex {
+    background-color: $background;
+    display: block;
+    @media (max-width:768px) {
+      width: 186px;
+      height: 44px;
+    }
+  }
+
+  &__redBallMobile {
     display: none;
     @media (max-width: 768px) {
       display: block;
@@ -37,36 +37,36 @@ display: block;
       width: 58px;
       height: 58px;
       top: 60px;
-      left: 20px;
+      left: 50px;
     }
   }
 
-  &__earnMore{
+  &__earnMore {
     @include mobile-inter-super-large;
-    border: 2px red solid;
     @media (max-width: 768px) {
       width: 100%;
       @include mobile-inter-large;
     }
   }
-  &__welbex{
+
+  &__welbex {
     margin-top: 0;
-    margin-bottom:0;
-    border: 2px green solid;
-    @media (max-width: 768px) {
+    margin-bottom: 0;
+    @media (max-width:768px) {
     }
   }
-  &__develop{
+
+  &__develop {
     position: relative;
     @include desktop-montserrat-md;
     margin-top: 0;
     padding-top: 30px;
-    border: 2px yellow solid;
     @media (max-width: 768px) {
       padding-top: 15px;
     }
   }
-  &__blueBall{
+
+  &__blueBall {
     display: none;
     @media (max-width: 768px) {
       display: block;
@@ -74,36 +74,38 @@ display: block;
       width: 60px;
       height: 60px;
       top: 220px;
-      left: 320px;
+      left: 280px;
     }
   }
 
   &__rightColumn {
     display: flex;
     flex-direction: column;
-   text-align: right;
-    border: 2px red solid;
+    text-align: right;
     @media (max-width: 768px) {
       display: block;
       text-align: left;
     }
   }
-  &__smallRedBall{
+
+  &__smallRedBall {
     position: absolute;
     width: 28px;
     height: 28px;
     top: 250px;
     left: 20px;
   }
-&__crm{
-  padding-top: 32px;
-  padding-bottom: 33px;
-  @include desktop-montserrat-normal;
-  @media (max-width: 768px) {
-    display: none;
+
+  &__crm {
+    padding-top: 32px;
+    padding-bottom: 33px;
+    @include desktop-montserrat-normal;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
-}
-  &__freeConsultation{
+
+  &__freeConsultation {
     padding-bottom: 40px;
     @media (max-width: 768px) {
       padding-bottom: 0;
@@ -111,47 +113,50 @@ display: block;
     }
   }
 
-&__oneRowColumn{
- border: 5px green solid;
-}
-  &__skypeAuditHiddenInDesktop{
+  &__skypeAuditHiddenInDesktop {
     display: none;
     @media (max-width: 768px) {
       position: relative;
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
-      padding: 20px 47px;
+      gap: 10px;
+      padding: 20px 35px;
       @include mobile-montserrat-normal;
     }
   }
-  &__thirty{
+
+  &__thirty {
     padding-bottom: 30px;
   }
-  &__salesDep{
+
+  &__salesDep {
     padding-bottom: 82px;
   }
+
   &__twoRowsColumn {
     position: relative;
-    h4{
+
+    h4 {
       @include desktop-inter-subtitle;
     }
-    h5{
+
+    h5 {
       @include desktop-montserrat-normal;
     }
+
     display: flex;
     flex-wrap: wrap;
-
-    border: 2px black solid;
 
     > div {
       flex-basis: calc(50% - 20px);
       flex-grow: 1;
     }
+
     @media (max-width: 768px) {
       display: none;
     }
   }
+
   &__button {
     display: block;
 
