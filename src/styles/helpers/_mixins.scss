@@ -63,7 +63,3 @@
   @include font-style('Montserrat', 12px, 400, normal, 0.65px, #E4E5EA, none);
 }
 
-@mixin rem-baseline($size-in-px: 16px) {
-  font-size: $size-in-px;
-  line-height: ($size-in-px * 1.5);
-}
