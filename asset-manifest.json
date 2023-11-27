@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/amoCRM_test_Dmitry_Nikolayev/static/css/main.79c112f6.css",
+    "main.js": "/amoCRM_test_Dmitry_Nikolayev/static/js/main.318460cd.js",
+    "static/js/787.d4aba7ab.chunk.js": "/amoCRM_test_Dmitry_Nikolayev/static/js/787.d4aba7ab.chunk.js",
+    "static/media/together-with-free-consultation.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/together-with-free-consultation.a9f5760ca3482d671129f8ebf3d57e8a.svg",
+    "static/media/with-WELBEX.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/with-WELBEX.a340fe1c646e38976df9ed92bd039a02.svg",
+    "static/media/velbex.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/velbex.7fef61eda0ac7eaaa82bc83761b475f3.svg",
+    "static/media/purple-ball.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/purple-ball.6656a271b3aaeb44e97fa430f3b7dabf.svg",
+    "static/media/whatsapp.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/whatsapp.fe24535359801e7f00829d3de0f85ddf.svg",
+    "static/media/viber.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/viber.4943b35bf6678c4f2a27d0bc306f1f54.svg",
+    "static/media/big-red-ball.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/big-red-ball.0a9e5ccb71e80893c6f2427e5faed30c.svg",
+    "static/media/velbex-icon.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/velbex-icon.b823dbdeb1fce1c504c80f87459e8cce.svg",
+    "index.html": "/amoCRM_test_Dmitry_Nikolayev/index.html",
+    "static/media/telegram.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/telegram.42a61f1c4de65f72281ca4ca7b08f21a.svg",
+    "static/media/hyphon.svg": "/amoCRM_test_Dmitry_Nikolayev/static/media/hyphon.e54c78534812ceaf5439f1313ba9da98.svg",
+    "main.79c112f6.css.map": "/amoCRM_test_Dmitry_Nikolayev/static/css/main.79c112f6.css.map",
+    "main.318460cd.js.map": "/amoCRM_test_Dmitry_Nikolayev/static/js/main.318460cd.js.map",
+    "787.d4aba7ab.chunk.js.map": "/amoCRM_test_Dmitry_Nikolayev/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79c112f6.css",
+    "static/js/main.318460cd.js"
+  ]
+}
