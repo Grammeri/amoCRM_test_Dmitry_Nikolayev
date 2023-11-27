@@ -153,10 +153,10 @@ display: block;
     }
   }
   &__button {
-    display: block; // По умолчанию кнопка отображается
+    display: block;
 
     @media (max-width: 768px) {
-      display: none; // Скрываем кнопку на мобильных устройствах
+      display: none;
     }
   }
 }

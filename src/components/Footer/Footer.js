@@ -1,4 +1,3 @@
-// React компонент Footer
 import React from 'react';
 import styles from './Footer.module.scss';
 import telegramIcon from "../../assets/telegram.svg";

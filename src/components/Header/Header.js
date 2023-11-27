@@ -1,5 +1,5 @@
 import React from 'react';
-import useResponsive from '../../hooks/useResponsive'; // Проверьте правильность пути
+import useResponsive from '../../hooks/useResponsive';
 import styles from './Header.module.scss';
 import Navigation from "../Navigation/Navigation";
 import velbexIcon from '../../assets/velbex-icon.svg';
