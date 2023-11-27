@@ -11,28 +11,40 @@
   border: 2px red solid;
   background-color: $background;
 
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+    height: 55px;
+    padding:0;
+    }
   &__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: start;
-
     border: 2px green solid;
+    @media (max-width: 768px) {
+     width: 100%;
+    }
   }
 
   &__icons {
     display: flex;
-    gap: 8pxl;
+    gap: 8px;
   }
-&__velbexIcon{
-  padding-right: 8px;
-}
-  &__bigRedBall{
+
+  &__velbexIcon {
+    padding-right: 8px;
+  }
+
+  &__bigRedBall {
     position: absolute;
     width: 83px;
     height: 83px;
     top: 70px;
     left: 620px;
   }
+
   &__iconsAndMotto {
     display: flex;
     flex-direction: column;
@@ -40,41 +52,53 @@
   }
 
   &__motto {
-@include desktop-montserrat-small;
+    @include desktop-montserrat-small;
     text-align: left;
-    p{
+    p {
       margin-bottom: 0;
     }
   }
-  &__details{
+
+  &__details {
     position: relative;
     @include desktop-inter-normal;
     border: 2px white solid;
     display: flex;
-    gap:30px;
+    gap: 30px;
     align-items: center;
     color: $general-white;
-    img{
-      &:hover{
+    img {
+      &:hover {
         cursor: pointer;
       }
     }
   }
-  &__purpleBall{
+
+  &__purpleBall {
     position: absolute;
     width: 60px;
     height: 60px;
     top: -50px;
     left: -150px;
   }
-  &__phone{
-   margin-right: 47px;
+
+  &__phone {
+    margin-right: 47px;
   }
-  &__telegram{
+
+  &__telegram {
     padding-right: 30px;
   }
-  &__viber{
+
+  &__viber {
     padding-right: 30px;
   }
 }
+
+@media (max-width: 768px) {
+  .Header__iconsAndMotto, .Header__details {
+    display: none;
+  }
+}
+
 

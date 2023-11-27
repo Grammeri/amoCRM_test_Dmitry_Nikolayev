@@ -7,32 +7,75 @@
   background-color: $background;
   justify-content: space-between;
 
+  @media (max-width: 768px) {
+display: block;
+    margin: 0 5px;
+  }
+
     &__leftColumn {
       text-align: left;
       padding-top: 90px;
         border: 2px blue solid;
+        @media (max-width: 768px) {
+          padding-top:50px;
+        }
     }
 
   &__withWelbex{
     background-color: $background;
     display: block;
+    @media (max-width: 768px) {
+      width: 186px;
+        height: 44px;
+    }
+  }
+  &__redBallMobile{
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      width: 58px;
+      height: 58px;
+      top: 60px;
+      left: 20px;
+    }
   }
 
   &__earnMore{
     @include mobile-inter-super-large;
-    margin-bottom: 0;
     border: 2px red solid;
+    @media (max-width: 768px) {
+      width: 100%;
+      @include mobile-inter-large;
+    }
   }
   &__welbex{
     margin-top: 0;
     margin-bottom:0;
     border: 2px green solid;
+    @media (max-width: 768px) {
+    }
   }
   &__develop{
+    position: relative;
     @include desktop-montserrat-md;
     margin-top: 0;
     padding-top: 30px;
     border: 2px yellow solid;
+    @media (max-width: 768px) {
+      padding-top: 15px;
+    }
+  }
+  &__blueBall{
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 220px;
+      left: 320px;
+    }
   }
 
   &__rightColumn {
@@ -40,6 +83,10 @@
     flex-direction: column;
    text-align: right;
     border: 2px red solid;
+    @media (max-width: 768px) {
+      display: block;
+      text-align: left;
+    }
   }
   &__smallRedBall{
     position: absolute;
@@ -52,14 +99,32 @@
   padding-top: 32px;
   padding-bottom: 33px;
   @include desktop-montserrat-normal;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
-  &__together{
+  &__freeConsultation{
     padding-bottom: 40px;
+    @media (max-width: 768px) {
+      padding-bottom: 0;
+      padding-top: 45px;
+    }
   }
 
 &__oneRowColumn{
  border: 5px green solid;
 }
+  &__skypeAuditHiddenInDesktop{
+    display: none;
+    @media (max-width: 768px) {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 20px 47px;
+      @include mobile-montserrat-normal;
+    }
+  }
   &__thirty{
     padding-bottom: 30px;
   }
@@ -82,6 +147,16 @@
     > div {
       flex-basis: calc(50% - 20px);
       flex-grow: 1;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__button {
+    display: block; // По умолчанию кнопка отображается
+
+    @media (max-width: 768px) {
+      display: none; // Скрываем кнопку на мобильных устройствах
     }
   }
 }

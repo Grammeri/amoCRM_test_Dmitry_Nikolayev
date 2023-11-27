@@ -7,27 +7,96 @@
   padding-top: 198px;
   border: 2px red solid;
   color: $general-white;
-
   display: flex;
   justify-content: space-between;
+
+  .Footer__clientGratitudeMobile {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__about {
+      width: 100%;
+      order: 1;
+      padding-bottom: 30px;
+    }
+
+    &__menu {
+      width: 48%;
+      order: 2;
+    }
+
+    &__noTitle {
+      padding-top: 35px;
+      width: 48%;
+      order: 3;
+
+      .Footer__thankYouLetters {
+        display: none;
+      }
+
+      .Footer__clientGratitudeMobile {
+        display: block;
+        order: 1;
+      }
+
+      .Footer__cases {
+        order: 2;
+      }
+
+      .Footer__certificates {
+        order: 3;
+      }
+
+      .Footer__youtubeBlog {
+        order: 4;
+      }
+
+      .Footer__qA {
+        order: 5;
+      }
+    }
+
+    &__contacts {
+      width: 100%;
+      order: 4;
+      text-align: left;
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+
+    &__mobileBottomLines {
+      order: 5;
+      display: block;
+      text-align: center;
+      padding-bottom: 60px;
+    }
+  }
 
   h4 {
     padding-bottom: 20px;
     @include desktop-inter-footer-subtitle;
-    color: $footer-subtitles
-
+    color: $footer-subtitles;
   }
 
   h5 {
     @include desktop-inter-normal;
   }
-  h6{
+
+  h6 {
     @include desktop-inter-small;
   }
 
   p {
     padding-bottom: 10px;
     @include desktop-inter-small;
+
     &:hover {
       cursor: pointer;
       color: $hovered-footer-links;
@@ -52,6 +121,10 @@
   &__contacts {
     text-align: right;
 
+    @media (max-width: 768px) {
+      text-align: left;
+    }
+
     h5 {
       padding-bottom: 20px;
     }
@@ -59,9 +132,56 @@
     img {
       padding-bottom: 20px;
       padding-left: 10px;
+
       &:hover {
         cursor: pointer;
       }
+    }
+  }
+
+  &__mobileBreak {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__mobileBottomLines {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      text-align: left;
+
+      .Footer__allRightsReserved {
+        @include mobile-montserrat-small;
+
+        &:hover {
+          cursor: default;
+          color: inherit;
+        }
+      }
+
+      .Footer__confidencePolicy {
+        @include mobile-montserrat-small;
+        text-decoration-line: underline;
+
+        &:hover {
+          cursor: default;
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  &__telegram, &__viber, &__whatsapp {
+    width: 45px;
+    height: 45px;
+
+    @media (max-width: 768px) {
+      width: 60px;
+      height: 60px;
     }
   }
 }

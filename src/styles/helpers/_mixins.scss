@@ -54,3 +54,11 @@
 @mixin mobile-inter-super-large {
   @include font-style('Inter', 48px, 400, normal, 0, #E4E5EA, none);
 }
+
+@mixin mobile-montserrat-normal {
+  @include font-style('Montserrat', 13px, 400, normal, 0.65px, #E4E5EA, uppercase);
+}
+
+@mixin mobile-montserrat-small {
+  @include font-style('Montserrat', 12px, 400, normal, 0.65px, #E4E5EA, none);
+}

@@ -10,12 +10,29 @@
   margin-right: 137px;
   border: 2px white solid;
 
+  @media (max-width: 768px) {
+    width: 100%;
+   margin-left: 5px;
+    margin-right: 5px;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+
+
   a {
     @include desktop-inter-normal;
     text-decoration: none;
 
     &:hover {
       color: $hovered-header-links;
+    }
+  }
+  @media (max-width: 768px) {
+    a {
+      @include mobile-inter-small;
+      text-transform: uppercase;
     }
   }
 }
